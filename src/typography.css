@@ -1,3 +1,5 @@
+@import "_fonts.css";
+
 @custom-media --mq-med (min-width: 46.875em);
 
 :root {
@@ -62,6 +64,7 @@ address,
 .coop-h4,
 .coop-h5,
 .coop-h6 {
+  font-family: var(--font-family);
   font-weight: normal;
   margin-top: 0;
 }
@@ -78,7 +81,6 @@ h6,
 .coop-h4,
 .coop-h5,
 .coop-h6 {
-  font-family: var(--font-family);
   font-weight: bold;
 }
 
