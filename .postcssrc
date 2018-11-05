@@ -1,0 +1,10 @@
+{
+  "map": false,
+  "plugins": {
+    "precss": {
+      "postcss-preset-env": {
+        "stage": 1
+      }
+    }
+  }
+}

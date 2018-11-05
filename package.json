@@ -1,0 +1,33 @@
+{
+  "name": "@coopdigital/foundation-typography",
+  "version": "1.0.0",
+  "description": "Co-op Foundations: Typography",
+  "main": "dist/typography.css",
+  "style": "src/typography.css",
+  "author": "Matthew Morek (matthew.morek@coopdigital.co.uk)",
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "node_modules/.bin/stylelint 'src/*.css'",
+    "comb": "node_modules/.bin/csscomb src/*.css",
+    "build": "node_modules/.bin/postcss src/*.css --dir dist/",
+    "test": "npm run comb && npm run lint",
+    "init": "rm -rf ./.git && git init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coopdigital/foundations-typography.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "csscomb": "^4.2.0",
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.1",
+    "precss": "^3.1.2",
+    "stylelint": "^9.7.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
