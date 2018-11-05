@@ -1,0 +1,72 @@
+:root {
+  --color-brand: #00B1E7;
+  --color-text: #282828;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Links */
+  --color-link: #00729A;
+  --color-link--hover: #000102;
+  --color-link--focus: #EEC300;
+  --color-link--active: #005981;
+  --color-link--visited: #004C67;
+
+  /* Buttons */
+  --color-button-primary: #0F8482;
+  --color-button-primary--hover: #2B9E9C;
+  --color-button-primary--active: #0C6D6B;
+
+  --color-button-dark: #374C63;
+  --color-button-dark--hover: #4A6683;
+  --color-button-dark--active: #2E3F53;
+
+  /* default button */
+  --color-button: var(--color-button-dark);
+  --color-button--hover: var(--color-button-dark--hover);
+  --color-button--active: var(--color-button-dark--active);
+
+  /* Palette */
+  /* Greyscale */
+  --color-grey-light: #F3F3F3;
+  --color-grey-mid: #C4C4C4;
+  --color-grey-dark: #6E6E6E;
+
+  /* Yellowscale */
+  --color-yellow-bright: #FFFF00;
+  --color-yellow-light: #FFEC00;
+  --color-yellow-mid: #FFD308;
+
+  /* Greenscale */
+  --color-green-bright: #EDFB3C;
+  --color-green-light: #BAD303;
+  --color-green-mid: #4F820D;
+  --color-green-dark: #385C0A;
+
+  /* Turquoisescale - previously GreenBlue */
+  --color-turquoise-bright: #0AFBFB;
+  --color-turquoise-light: #72DCDB;
+  --color-turquoise-mid: #0F8482;
+  --color-turquoise-dark: #166D66;
+
+  /* Bluescale */
+  --color-blue-bright: #418CFC;
+  --color-blue-light: #92D8FE;
+  --color-blue-mid: #326BB7;
+  --color-blue-dark: #334C89;
+
+  /* Pinkscale */
+  --color-pink-bright: #FC43D3;
+  --color-pink-light: #FF80D3;
+
+  /* Purplescale */
+  --color-purple-mid: #AD208E;
+  --color-purple-dark: #61307D;
+
+  /* Orangescale */
+  --color-orange-mid: #F8642C;
+
+  /* Redscale */
+  --color-red-mid: #D63118;
+  --color-red-dark: #9F2A00;
+}

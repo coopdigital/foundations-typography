@@ -1,13 +1,19 @@
+@import "_colours.css";
 @import "_fonts.css";
 
-/* MQ Brakpoints */
-@custom-media --mq-xsmall (min-width: 20em); // 320px
-@custom-media --mq-small (min-width: 30em); // 480px
-@custom-media --mq-medium (min-width: 46.875em); // 750px
-@custom-media --mq-large (min-width: 60em); // 960px
-@custom-media --mq-xlarge (min-width: 81.25em); // 1300px
-
 :root {
+  /* MQ Brakpoints */
+  /* 320px */
+  @custom-media --mq-xsmall (min-width: 20em);
+  /* 480px */
+  @custom-media --mq-small (min-width: 30em);
+  /* 750px */
+  @custom-media --mq-medium (min-width: 46.875em);
+  /* 960px */
+  @custom-media --mq-large (min-width: 60em);
+  /* 1300px */
+  @custom-media --mq-xlarge (min-width: 81.25em);
+
   --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   /* Typography: Base */
@@ -20,7 +26,7 @@
   --type-base--h5: 1.125rem;
   --type-base--h6: 0.8125rem;
   --type-base--blockquote: 1.25rem;
-  --type-base--lead: 1.25;
+  --type-base--lead: 1.25rem;
   --type-base--small: 0.8125rem;
   --type-base--line-height: 1.7;
 
@@ -205,5 +211,169 @@ h6,
     font-size: var(--type-medium--h6);
     padding-top: var(--spacing-medium--1-4);
     margin-bottom: var(--spacing-medium--1-8);
+  }
+}
+
+small,
+.coop-smallprint {
+  line-height: 1.25;
+  font-size: var(--type-base--small);
+  padding-top: var(--spacing-base--1-4);
+  margin-bottom: var(--spacing-base--1-8);
+
+  @media (--mq-medium) {
+    font-size: var(--type-medium--small);
+    padding-top: var(--spacing-medium--1-4);
+    margin-bottom: var(--spacing-medium--1-8);
+  }
+}
+
+hr,
+.coop-hr {
+  display: block;
+  margin: 2rem 0 3rem;
+  border-style: solid;
+  border-color: var(--color-grey-mid);
+  border-width: 0 0 1px;
+  height: 0;
+  color: var(--color-grey-mid);
+
+  &.dashed {
+    border-style: dashed;
+  }
+}
+
+.coop-regular {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.coop-italic,
+.coop-em {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.coop-bold,
+.coop-strong {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.coop-medium {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.coop-bold-italic {
+  font-family: bold;
+  font-style: italic;
+}
+
+blockquote,
+.coop-blockquote {
+  margin-bottom: var(--spacing-base--1-2);
+  margin-left: var(--spacing-base--1-4);
+  padding-left: var(--spacing-base--1-4);
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 6px;
+    margin-top: var(--spacing-base--1-4);
+    margin-right: 0;
+    margin-bottom: var(--spacing-base--1-4);
+    margin-left: var(--spacing-base--1-4);
+    background: var(--color-grey-light);
+  }
+
+  @media (--mq-medium) {
+    margin-left: var(--spacing-base--1-2);
+  }
+
+  p {
+    margin-bottom: var(--spacing-base--1-4);
+    font-style: normal;
+    font-weight: normal;
+    text-indent: -0.25rem;
+
+    &.alpha,
+    &.beta {
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+
+  cite {
+    font-size: var(--type-base--body);
+    font-style: normal;
+    margin-top: var(--spacing-base--1-4);
+  }
+}
+
+cite,
+.coop-blockquote__cite {
+  display: block;
+  font-size: 0.75rem;
+}
+
+
+del,
+.coop-line-through {
+  text-decoration: line-through;
+}
+
+address {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.coop-intro-text {
+  font-size: var(--type-base--lead);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-base--1-8);
+}
+
+p + ul {
+  margin-top: calc(-1 * var(--spacing-base--1-8));
+
+  @media (--mq-medium) {
+     margin-top: calc(-1 * var(--spacing-medium--1-8));
+  }
+}
+
+dl,
+.coop-definition-list {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: var(--spacing-base--1-2);
+
+  dt {
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  dd {
+    font-family: var(--font-family);
+    margin: 0 0 var(--spacing-base--1-4);
+  }
+}
+
+.coop-undecorated-list,
+.coop-list-bare {
+  list-style-type: none;
+  padding: 0;
+}
+
+.coop-list-inline {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
   }
 }
