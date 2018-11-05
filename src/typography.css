@@ -1,6 +1,11 @@
 @import "_fonts.css";
 
-@custom-media --mq-med (min-width: 46.875em);
+/* MQ Brakpoints */
+@custom-media --mq-xsmall (min-width: 20em); // 320px
+@custom-media --mq-small (min-width: 30em); // 480px
+@custom-media --mq-medium (min-width: 46.875em); // 750px
+@custom-media --mq-large (min-width: 60em); // 960px
+@custom-media --mq-xlarge (min-width: 81.25em); // 1300px
 
 :root {
   --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -92,7 +97,7 @@ p {
     margin-bottom: var(--spacing-medium--1-2);
   }
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--body);
     margin-bottom: var(--spacing-medium--1-4);
   }
@@ -103,7 +108,7 @@ ol {
   font-size: var(--type-base--body);
   margin-bottom: var(--spacing-base--1-4);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--body);
     margin-bottom: var(--spacing-medium--1-4);
   }
@@ -116,7 +121,7 @@ ol {
   margin-bottom: var(--spacing-base--1-2);
   padding-top: var(--spacing-base--1-2);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h-mega);
     margin-bottom: var(--spacing-medium--1-2);
     padding-top: var(--spacing-medium--1-2);
@@ -129,7 +134,7 @@ h1,
   line-height: 1.4;
   margin-bottom: var(--spacing-base--1-2);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h1);
     margin-bottom: var(--spacing-medium--1-2);
   }
@@ -141,7 +146,7 @@ h2,
   line-height: 1.55;
   margin-bottom: var(--spacing-base--1-2);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h2);
     margin-bottom: var(--spacing-medium--1-2);
   }
@@ -154,7 +159,7 @@ h3,
   padding-top: var(--spacing-base--1-8);
   margin-bottom: var(--spacing-base--1-8);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h3);
     padding-top: var(--spacing-medium--1-8);
     margin-bottom: var(--spacing-medium--1-8);
@@ -168,7 +173,7 @@ h4,
   padding-top: var(--spacing-base--1-8);
   margin-bottom: var(--spacing-base--1-8);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h4);
     padding-top: var(--spacing-medium--1-8);
     margin-bottom: var(--spacing-medium--1-8);
@@ -182,7 +187,7 @@ h5,
   padding-top: var(--spacing-base--1-8);
   margin-bottom: var(--spacing-base--1-8);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h5);
     padding-top: var(--spacing-medium--1-8);
     margin-bottom: var(--spacing-medium--1-8);
@@ -196,7 +201,7 @@ h6,
   padding-top: var(--spacing-base--1-4);
   margin-bottom: var(--spacing-base--1-8);
 
-  @media (--mq-med) {
+  @media (--mq-medium) {
     font-size: var(--type-medium--h6);
     padding-top: var(--spacing-medium--1-4);
     margin-bottom: var(--spacing-medium--1-8);
