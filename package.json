@@ -1,9 +1,9 @@
 {
   "name": "@coopdigital/foundations-typography",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Co-op Foundations: Typography",
   "main": "dist/typography.css",
-  "style": "src/typography.css",
+  "style": "src/typography.pcss",
   "author": "Matthew Morek (matthew.morek@coopdigital.co.uk)",
   "license": "MIT",
   "files": [
