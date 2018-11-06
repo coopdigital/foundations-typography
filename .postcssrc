@@ -1,6 +1,7 @@
 {
   "map": false,
   "plugins": {
+    "postcss-import": {},
     "precss": {
       "postcss-preset-env": {
         "stage": 1
