@@ -23,7 +23,10 @@ The latter have two dependencies, which should be consumed by your frontend tool
 In Vue, you can just reference it from a global component like so:
 ```css
 <style>
-@import "~@coopdigital/foundations-typography/src/typography.css";
+/* Import PostCSS source */
+@import "~@coopdigital/foundations-typography/src/typography.pcss";
+/* Import postprocessed distributable CSS */
+@import "~@coopdigital/foundations-typography/dist/typography.css";
 </style>
 ```
 
