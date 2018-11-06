@@ -11,11 +11,9 @@
     "dist"
   ],
   "scripts": {
-    "lint": "node_modules/.bin/stylelint 'src/*.css'",
-    "comb": "node_modules/.bin/csscomb src/*.css",
-    "build": "node_modules/.bin/postcss src/*.css --dir dist/",
-    "test": "npm run comb && npm run lint",
-    "init": "rm -rf ./.git && git init"
+    "lint": "node_modules/.bin/stylelint 'dist/*.css' --fix",
+    "build": "node_modules/.bin/postcss src/*.pcss --dir dist/ --ext css",
+    "test": "npm run build && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -23,11 +21,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.3.1",
-    "csscomb": "^4.2.0",
     "postcss": "^7.0.5",
     "postcss-cli": "^6.0.1",
     "precss": "^3.1.2",
+    "prettier": "^1.14.3",
     "stylelint": "^9.7.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-prettier": "^1.0.3"
   }
 }
