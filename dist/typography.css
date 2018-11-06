@@ -1,4 +1,64 @@
 :root {
+  /* MQ Brakpoints */
+  /* 320px */
+  /* 480px */
+  /* 750px */
+  /* 960px */
+  /* 1300px */
+
+  --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Typography: Base */
+  --type-base--body: 1rem;
+  --type-base--h-mega: 2.25rem;
+  --type-base--h1: 1.875rem;
+  --type-base--h2: 1.25rem;
+  --type-base--h3: 1.125rem;
+  --type-base--h4: 1.125rem;
+  --type-base--h5: 1.125rem;
+  --type-base--h6: 0.8125rem;
+  --type-base--blockquote: 1.25rem;
+  --type-base--lead: 1.25rem;
+  --type-base--small: 0.8125rem;
+  --type-base--line-height: 1.7;
+
+  /* Typography: Medium */
+  --type-medium--body: 1.25rem;
+  --type-medium--h-mega: 3rem;
+  --type-medium--h1: 2.875rem;
+  --type-medium--h2: 1.625rem;
+  --type-medium--h3: 1.375rem;
+  --type-medium--h4: 1.375rem;
+  --type-medium--h5: 1.375rem;
+  --type-medium--h6: 1rem;
+  --type-medium--blockquote: 1.625rem;
+  --type-medium--lead: 1.625rem;
+  --type-medium--small: 1rem;
+  --type-medium--base-line-height: 1.6;
+
+  /* Spacing: Base */
+  --spacing-base: 2rem;
+  --spacing-base--3-4: calc(2rem / 4 * 3);
+  --spacing-base--3-4: calc(var(--spacing-base) / 4 * 3);
+  --spacing-base--1-2: calc(2rem / 2);
+  --spacing-base--1-2: calc(var(--spacing-base) / 2);
+  --spacing-base--1-4: calc(2rem / 4);
+  --spacing-base--1-4: calc(var(--spacing-base) / 4);
+  --spacing-base--1-8: calc(2rem / 8);
+  --spacing-base--1-8: calc(var(--spacing-base) / 8);
+
+  /* Spacing: Medium */
+  --spacing-medium: 4rem;
+  --spacing-medium--3-4: calc(4rem / 4 * 3);
+  --spacing-medium--3-4: calc(var(--spacing-medium) / 4 * 3);
+  --spacing-medium--1-2: calc(4rem / 2);
+  --spacing-medium--1-2: calc(var(--spacing-medium) / 2);
+  --spacing-medium--1-4: calc(4rem / 4);
+  --spacing-medium--1-4: calc(var(--spacing-medium) / 4);
+  --spacing-medium--1-8: calc(4rem / 8);
+  --spacing-medium--1-8: calc(var(--spacing-medium) / 8);
+
+  /* Colours */
   --color-brand: #00b1e7;
   --color-text: #282828;
 
@@ -153,68 +213,6 @@
     url("https://assets.digital.coop.co.uk/finder/static/fonts/4862b373-2643-46b1-b0b5-88537c52d15c.svgrgba(72, 98, 179, 0.45098)-2643-46b1-b0b5-88537c52d15c")
       format("svg");
 }
-
-:root {
-  /* MQ Brakpoints */
-  /* 320px */
-  /* 480px */
-  /* 750px */
-  /* 960px */
-  /* 1300px */
-
-  --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  /* Typography: Base */
-  --type-base--body: 1rem;
-  --type-base--h-mega: 2.25rem;
-  --type-base--h1: 1.875rem;
-  --type-base--h2: 1.25rem;
-  --type-base--h3: 1.125rem;
-  --type-base--h4: 1.125rem;
-  --type-base--h5: 1.125rem;
-  --type-base--h6: 0.8125rem;
-  --type-base--blockquote: 1.25rem;
-  --type-base--lead: 1.25rem;
-  --type-base--small: 0.8125rem;
-  --type-base--line-height: 1.7;
-
-  /* Typography: Medium */
-  --type-medium--body: 1.25rem;
-  --type-medium--h-mega: 3rem;
-  --type-medium--h1: 2.875rem;
-  --type-medium--h2: 1.625rem;
-  --type-medium--h3: 1.375rem;
-  --type-medium--h4: 1.375rem;
-  --type-medium--h5: 1.375rem;
-  --type-medium--h6: 1rem;
-  --type-medium--blockquote: 1.625rem;
-  --type-medium--lead: 1.625rem;
-  --type-medium--small: 1rem;
-  --type-medium--base-line-height: 1.6;
-
-  /* Spacing: Base */
-  --spacing-base: 2rem;
-  --spacing-base--3-4: calc(2rem / 4 * 3);
-  --spacing-base--3-4: calc(var(--spacing-base) / 4 * 3);
-  --spacing-base--1-2: calc(2rem / 2);
-  --spacing-base--1-2: calc(var(--spacing-base) / 2);
-  --spacing-base--1-4: calc(2rem / 4);
-  --spacing-base--1-4: calc(var(--spacing-base) / 4);
-  --spacing-base--1-8: calc(2rem / 8);
-  --spacing-base--1-8: calc(var(--spacing-base) / 8);
-
-  /* Spacing: Medium */
-  --spacing-medium: 4rem;
-  --spacing-medium--3-4: calc(4rem / 4 * 3);
-  --spacing-medium--3-4: calc(var(--spacing-medium) / 4 * 3);
-  --spacing-medium--1-2: calc(4rem / 2);
-  --spacing-medium--1-2: calc(var(--spacing-medium) / 2);
-  --spacing-medium--1-4: calc(4rem / 4);
-  --spacing-medium--1-4: calc(var(--spacing-medium) / 4);
-  --spacing-medium--1-8: calc(4rem / 8);
-  --spacing-medium--1-8: calc(var(--spacing-medium) / 8);
-}
-
 h1,
 h2,
 h3,
@@ -236,7 +234,6 @@ address,
   font-weight: normal;
   margin-top: 0;
 }
-
 h1,
 h2,
 h3,
@@ -251,28 +248,28 @@ h6,
 .coop-h6 {
   font-weight: bold;
 }
-
 p {
   font-size: 1rem;
   font-size: var(--type-base--body);
   margin-bottom: calc(2rem / 4);
   margin-bottom: var(--spacing-base--1-4);
 }
-
 p:last-child {
   margin-bottom: calc(4rem / 2);
+
   margin-bottom: var(--spacing-medium--1-2);
 }
-
 @media (min-width: 46.875em) {
   p {
     font-size: 1.25rem;
+
     font-size: var(--type-medium--body);
+
     margin-bottom: calc(4rem / 4);
+
     margin-bottom: var(--spacing-medium--1-4);
   }
 }
-
 ul,
 ol {
   font-size: 1rem;
@@ -280,17 +277,18 @@ ol {
   margin-bottom: calc(2rem / 4);
   margin-bottom: var(--spacing-base--1-4);
 }
-
 @media (min-width: 46.875em) {
   ul,
   ol {
     font-size: 1.25rem;
+
     font-size: var(--type-medium--body);
+
     margin-bottom: calc(4rem / 4);
+
     margin-bottom: var(--spacing-medium--1-4);
   }
 }
-
 .coop-h-mega {
   font-weight: bold;
   font-size: 2.25rem;
@@ -301,18 +299,21 @@ ol {
   padding-top: calc(2rem / 2);
   padding-top: var(--spacing-base--1-2);
 }
-
 @media (min-width: 46.875em) {
   .coop-h-mega {
     font-size: 3rem;
+
     font-size: var(--type-medium--h-mega);
+
     margin-bottom: calc(4rem / 2);
+
     margin-bottom: var(--spacing-medium--1-2);
+
     padding-top: calc(4rem / 2);
+
     padding-top: var(--spacing-medium--1-2);
   }
 }
-
 h1,
 .coop-h1 {
   font-size: 1.875rem;
@@ -321,17 +322,18 @@ h1,
   margin-bottom: calc(2rem / 2);
   margin-bottom: var(--spacing-base--1-2);
 }
-
 @media (min-width: 46.875em) {
   h1,
   .coop-h1 {
     font-size: 2.875rem;
+
     font-size: var(--type-medium--h1);
+
     margin-bottom: calc(4rem / 2);
+
     margin-bottom: var(--spacing-medium--1-2);
   }
 }
-
 h2,
 .coop-h2 {
   font-size: 1.25rem;
@@ -340,17 +342,18 @@ h2,
   margin-bottom: calc(2rem / 2);
   margin-bottom: var(--spacing-base--1-2);
 }
-
 @media (min-width: 46.875em) {
   h2,
   .coop-h2 {
     font-size: 1.625rem;
+
     font-size: var(--type-medium--h2);
+
     margin-bottom: calc(4rem / 2);
+
     margin-bottom: var(--spacing-medium--1-2);
   }
 }
-
 h3,
 .coop-h3 {
   font-size: 1.125rem;
@@ -361,19 +364,22 @@ h3,
   margin-bottom: calc(2rem / 8);
   margin-bottom: var(--spacing-base--1-8);
 }
-
 @media (min-width: 46.875em) {
   h3,
   .coop-h3 {
     font-size: 1.375rem;
+
     font-size: var(--type-medium--h3);
+
     padding-top: calc(4rem / 8);
+
     padding-top: var(--spacing-medium--1-8);
+
     margin-bottom: calc(4rem / 8);
+
     margin-bottom: var(--spacing-medium--1-8);
   }
 }
-
 h4,
 .coop-h4 {
   font-size: 1.125rem;
@@ -384,19 +390,22 @@ h4,
   margin-bottom: calc(2rem / 8);
   margin-bottom: var(--spacing-base--1-8);
 }
-
 @media (min-width: 46.875em) {
   h4,
   .coop-h4 {
     font-size: 1.375rem;
+
     font-size: var(--type-medium--h4);
+
     padding-top: calc(4rem / 8);
+
     padding-top: var(--spacing-medium--1-8);
+
     margin-bottom: calc(4rem / 8);
+
     margin-bottom: var(--spacing-medium--1-8);
   }
 }
-
 h5,
 .coop-h5 {
   font-size: 1.125rem;
@@ -407,19 +416,22 @@ h5,
   margin-bottom: calc(2rem / 8);
   margin-bottom: var(--spacing-base--1-8);
 }
-
 @media (min-width: 46.875em) {
   h5,
   .coop-h5 {
     font-size: 1.375rem;
+
     font-size: var(--type-medium--h5);
+
     padding-top: calc(4rem / 8);
+
     padding-top: var(--spacing-medium--1-8);
+
     margin-bottom: calc(4rem / 8);
+
     margin-bottom: var(--spacing-medium--1-8);
   }
 }
-
 h6,
 .coop-h6 {
   font-size: 0.8125rem;
@@ -430,19 +442,22 @@ h6,
   margin-bottom: calc(2rem / 8);
   margin-bottom: var(--spacing-base--1-8);
 }
-
 @media (min-width: 46.875em) {
   h6,
   .coop-h6 {
     font-size: 1rem;
+
     font-size: var(--type-medium--h6);
+
     padding-top: calc(4rem / 4);
+
     padding-top: var(--spacing-medium--1-4);
+
     margin-bottom: calc(4rem / 8);
+
     margin-bottom: var(--spacing-medium--1-8);
   }
 }
-
 small,
 .coop-smallprint {
   line-height: 1.25;
@@ -453,19 +468,22 @@ small,
   margin-bottom: calc(2rem / 8);
   margin-bottom: var(--spacing-base--1-8);
 }
-
 @media (min-width: 46.875em) {
   small,
   .coop-smallprint {
     font-size: 1rem;
+
     font-size: var(--type-medium--small);
+
     padding-top: calc(4rem / 4);
+
     padding-top: var(--spacing-medium--1-4);
+
     margin-bottom: calc(4rem / 8);
+
     margin-bottom: var(--spacing-medium--1-8);
   }
 }
-
 hr,
 .coop-hr {
   display: block;
@@ -478,39 +496,32 @@ hr,
   color: #c4c4c4;
   color: var(--color-grey-mid);
 }
-
 hr.dashed,
 .coop-hr.dashed {
   border-style: dashed;
 }
-
 .coop-regular {
   font-weight: normal;
   font-style: normal;
 }
-
 .coop-italic,
 .coop-em {
   font-weight: normal;
   font-style: italic;
 }
-
 .coop-bold,
 .coop-strong {
   font-weight: bold;
   font-style: normal;
 }
-
 .coop-medium {
   font-weight: 500;
   font-style: normal;
 }
-
 .coop-bold-italic {
   font-family: bold;
   font-style: italic;
 }
-
 blockquote,
 .coop-blockquote {
   margin-bottom: calc(2rem / 2);
@@ -520,34 +531,44 @@ blockquote,
   padding-left: calc(2rem / 4);
   padding-left: var(--spacing-base--1-4);
 }
-
 blockquote:before,
 blockquote:after,
 .coop-blockquote:before,
 .coop-blockquote:after {
   content: "";
+
   display: block;
+
   width: 45px;
+
   height: 6px;
+
   margin-top: calc(2rem / 4);
+
   margin-top: var(--spacing-base--1-4);
+
   margin-right: 0;
+
   margin-bottom: calc(2rem / 4);
+
   margin-bottom: var(--spacing-base--1-4);
+
   margin-left: calc(2rem / 4);
+
   margin-left: var(--spacing-base--1-4);
+
   background: #f3f3f3;
+
   background: var(--color-grey-light);
 }
-
 @media (min-width: 46.875em) {
   blockquote,
   .coop-blockquote {
     margin-left: calc(2rem / 2);
+
     margin-left: var(--spacing-base--1-2);
   }
 }
-
 blockquote p,
 .coop-blockquote p {
   margin-bottom: calc(2rem / 4);
@@ -556,15 +577,14 @@ blockquote p,
   font-weight: normal;
   text-indent: -0.25rem;
 }
-
 blockquote p.alpha,
 blockquote p.beta,
 .coop-blockquote p.alpha,
 .coop-blockquote p.beta {
   font-style: normal;
+
   font-weight: normal;
 }
-
 blockquote cite,
 .coop-blockquote cite {
   font-size: 1rem;
@@ -573,23 +593,19 @@ blockquote cite,
   margin-top: calc(2rem / 4);
   margin-top: var(--spacing-base--1-4);
 }
-
 cite,
 .coop-blockquote__cite {
   display: block;
   font-size: 0.75rem;
 }
-
 del,
 .coop-line-through {
   text-decoration: line-through;
 }
-
 address {
   font-weight: normal;
   font-style: normal;
 }
-
 .coop-intro-text {
   font-size: 1.25rem;
   font-size: var(--type-base--lead);
@@ -597,19 +613,17 @@ address {
   margin-bottom: calc(2rem / 8);
   margin-bottom: var(--spacing-base--1-8);
 }
-
 p + ul {
   margin-top: calc(-1 * calc(2rem / 8));
   margin-top: calc(-1 * var(--spacing-base--1-8));
 }
-
 @media (min-width: 46.875em) {
   p + ul {
     margin-top: calc(-1 * calc(4rem / 8));
+
     margin-top: calc(-1 * var(--spacing-medium--1-8));
   }
 }
-
 dl,
 .coop-definition-list {
   font-size: 1rem;
@@ -618,7 +632,6 @@ dl,
   margin-bottom: calc(2rem / 2);
   margin-bottom: var(--spacing-base--1-2);
 }
-
 dl dt,
 .coop-definition-list dt {
   font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -626,7 +639,6 @@ dl dt,
   font-weight: bold;
   margin-bottom: 0;
 }
-
 dl dd,
 .coop-definition-list dd {
   font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -634,18 +646,15 @@ dl dd,
   margin: 0 0 calc(2rem / 4);
   margin: 0 0 var(--spacing-base--1-4);
 }
-
 .coop-undecorated-list,
 .coop-list-bare {
   list-style-type: none;
   padding: 0;
 }
-
 .coop-list-inline {
   list-style-type: none;
   padding: 0;
 }
-
 .coop-list-inline li {
   display: inline-block;
 }
