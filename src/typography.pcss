@@ -326,12 +326,11 @@ dl,
 
 a {
   color: var(--color-link);
-  border-bottom: 0.05em solid var(--color-link);
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: var(--color-link--hover);
-    border: 0;
+    text-decoration: none;
   }
 
   &:active,
@@ -344,12 +343,9 @@ a {
 
 .link-white {
   color: var(--color-white);
-  border-bottom: 0.05em solid var(--color-white);
-  text-decoration: none;
 
   &:hover {
     color: var(--color-white);
-    border: 0;
   }
 
   &:active,
@@ -362,18 +358,15 @@ a {
 
 .link-black {
   color: var(--color-black);
-    border-bottom: 0.05em solid var(--color-black);
-    text-decoration: none;
 
-    &:hover {
-      color: var(--color-black);
-      border: 0;
-    }
+  &:hover {
+    color: var(--color-black);
+  }
 
-    &:active,
-    &:focus {
-      transition: none;
-      outline: 2px dotted var(--color-black);
-      outline-offset: 3px;
-    }
+  &:active,
+  &:focus {
+    transition: none;
+    outline: 2px dotted var(--color-black);
+    outline-offset: 3px;
+  }
 }
